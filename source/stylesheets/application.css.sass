@@ -1,0 +1,100 @@
+@import "normalize"
+@import "compass"
+@import "sprites"
+
+=debug($color)
+  background: rgba($color,0.3)
+  height: 100%
+
++global-reset
+
+#oc
+  text-align: center
+
+#ic
+  +clearfix
+  margin: 0 auto
+  background: image_url("ic-bg.jpg") no-repeat
+  width: 890px
+
+
+
+#sidebar
+  +float-left
+  width: 160px
+
+#content
+  +float-left
+  width: 729px
+
+#header
+  +clearfix
+  height: 138px
+
+  .top, .bottom
+    +clearfix
+  h1, .hnav
+    +float-left
+  .hnav    
+    margin-left: 69px
+    margin-top: 50px
+  
+  
+#viewport
+  +clearfix
+  height: 376px
+
+#footer  
+  +clearfix
+  height: 83px
+  .hnav    
+    margin-left: 17px
+    margin-top: 15px
+  
+
+#grid
+  +float-left
+  width: 498px
+  height: 363px
+  margin-right: 13px
+  margin-top: 3px
+  background: #000  
+  
+.trip
+  position: relative
+  display: block
+  width: 248px
+  height: 120px
+  overflow: hidden
+  img
+    z-index: 1
+    position: absolute
+    top: 0
+    +transition(opacity .4s ease)
+    +opaque
+    &.transparent
+      +transparent
+    &.data
+      z-index: 2
+
+  &.left
+    img
+      left: 0
+  &.right
+    img
+      right: 0
+
+
+#fb-plugins
+  +float-left
+  +border-radius(18px)
+  border: 1px solid #CCC
+  width: 162px
+  height: 373px
+  background: #FFFCC7
+  
+.vnav  
+  +no-bullets
+.hnav  
+  +horizontal-list(false)
+

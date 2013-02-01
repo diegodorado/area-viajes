@@ -1,0 +1,60 @@
+@import "icon/*.png"
+$icon-sprite-dimensions: true
+
+.icon-sprite
+  display: block
+  +hide-text
+
++all-icon-sprites
+
+=move($ml, $mt)
+  margin-left: $ml + px
+  margin-top: $mt + px
+
+//header
+.icon-logo
+  +move(7,21)
+.icon-consultas
+  +move(0,12)
+.icon-suscribite
+  +move(17,8)
+.icon-hacetefan
+  +move(40,0)
+.icon-titulo
+  +move(107,7)
+
+//sidebar
+.icon-salidas-grupales
+  +move(27,30)
+.icon-internacionales
+  +move(24,23)
+.icon-nacionales
+  +move(36,33)
+.icon-regalo-boda
+  +move(33,20)
+.icon-cruceros
+  +move(40,12)
+.icon-propuestas
+  +move(35,32)
+
+//plugins-facebook
+.icon-plugins-facebook
+  +move(36,8)
+
+//footer
+.icon-notas
+  +move(0,10)
+.icon-album
+  +move(32,6)
+.icon-tiempo
+  +move(22,9)
+.icon-info-viajeros
+  +move(22,13)
+.icon-conversor
+  +move(14,10)
+.icon-check
+  +move(18,13)
+.icon-dnm
+  +move(28,0)
+
+
